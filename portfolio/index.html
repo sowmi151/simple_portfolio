@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sowmiya A | Computer Science Student & Aspiring Developer</title>
+  <meta name="description" content="Portfolio of Sowmiya A, a B.Tech Computer Science student interested in web development and AI.">
+
+  <!-- Google Fonts: Sora (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Icon set (inline SVG, no external library) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.300-1.300-1.700-1.300-1.700-1-.7.1-.7.1-.7 1.200.1 1.800 1.200 1.800 1.200 1 1.800 2.800 1.300 3.400 1 .1-.8.4-1.300.7-1.600-2.600-.3-5.300-1.300-5.300-5.700 0-1.300.5-2.300 1.200-3.100-.1-.3-.5-1.500.1-3.100 0 0 1-.3 3.200 1.200a11 11 0 0 1 5.800 0c2.200-1.500 3.200-1.200 3.200-1.200.6 1.600.2 2.800.1 3.100.8.8 1.200 1.800 1.200 3.100 0 4.400-2.700 5.400-5.300 5.700.4.4.8 1.100.8 2.200v3.300c0 .3.2.7.8.6A11.500 11.500 0 0 0 12 .5z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.400 20.400h-3.600v-5.600c0-1.300 0-3-1.800-3s-2.100 1.400-2.100 2.900v5.700H9.300V9h3.400v1.600c.5-.9 1.600-1.800 3.400-1.800 3.600 0 4.300 2.400 4.300 5.500zM5.300 7.400a2.100 2.100 0 1 1 0-4.200 2.100 2.100 0 0 1 0 4.200zM7.100 20.400H3.600V9h3.500zM22.200 0H1.800C.8 0 0 .8 0 1.700v20.600c0 .9.8 1.700 1.800 1.700h20.400c1 0 1.800-.8 1.800-1.700V1.700C24 .8 23.200 0 22.200 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M2 5h20a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm10 7.200L3.500 7v.2L12 13l8.500-5.800V7z"/></symbol>
+  </svg>
+
+  <!-- Navigation (sticky). The checkbox powers the mobile menu without JavaScript. -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#home">Sowmiya A</a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+      <label for="menu-toggle" class="menu-button" aria-hidden="true"><span></span></label>
+
+      <nav class="nav__menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero / profile -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Hi, I'm Sowmiya A.</h1>
+          <p class="hero__role">B.Tech Computer Science student and aspiring developer</p>
+          <p class="hero__sub">I enjoy building clean websites and learning how AI tools work. Right now I'm looking for an internship where I can grow.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#projects">View my projects</a>
+            <a class="btn btn--outline" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <!-- Replace assets/avatar.svg with your own photo (keep it roughly square) -->
+        <img class="hero__photo" src="assets/avatar.svg" alt="Photo of Sowmiya A" width="320" height="320">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container narrow">
+        <h2>About me</h2>
+        <p>I'm a second-year Computer Science student at SRM Institute of Science and Technology in Chennai. I like turning ideas into working websites and I'm learning Python, web development and the basics of AI. Outside coding, I enjoy design tools like Figma and Canva.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--tint" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section__lead">What I use today and what I'm picking up next.</p>
+
+        <div class="grid grid--3">
+          <div class="panel">
+            <h3>Languages</h3>
+            <ul class="chips"><li>Python</li><li>C</li><li>C++</li><li>HTML</li><li>CSS</li></ul>
+          </div>
+          <div class="panel">
+            <h3>Tools</h3>
+            <ul class="chips"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Figma</li><li>Canva</li></ul>
+          </div>
+          <div class="panel">
+            <h3>Learning</h3>
+            <ul class="chips"><li>JavaScript</li><li>React</li><li>Node.js</li><li>MySQL</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects (placeholders: swap in your real titles, text and repo links) -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section__lead">A few things I've built while learning.</p>
+
+        <div class="grid grid--3">
+          <article class="project">
+            <h3>Landing Page</h3>
+            <p>A responsive product landing page built with HTML and CSS using Flexbox and Grid.</p>
+            <p class="project__tech">HTML, CSS</p>
+            <a class="project__link" href="https://github.com/sowmi151/your-repo-name">View on GitHub</a>
+          </article>
+
+          <article class="project">
+            <h3>Temperature Converter</h3>
+            <p>A converter for Celsius, Fahrenheit and Kelvin with live input validation.</p>
+            <p class="project__tech">HTML, CSS, JavaScript</p>
+            <a class="project__link" href="https://github.com/sowmi151/your-repo-name">View on GitHub</a>
+          </article>
+
+          <article class="project">
+            <h3>Project three</h3>
+            <p>Placeholder: describe what it does and what you learned in one or two sentences.</p>
+            <p class="project__tech">Python</p>
+            <a class="project__link" href="https://github.com/sowmi151/your-repo-name">View on GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--tint" id="contact">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p class="section__lead">Have an internship, project or question? Send me a message.</p>
+
+        <ul class="contact">
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            <span><strong>Sowmiya A</strong><br><a href="mailto:your.email@example.com">your.email@example.com</a></span>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
+            <a href="https://github.com/sowmi151">github.com/sowmi151</a>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            <a href="https://www.linkedin.com/in/sowmiya-a-work">linkedin.com/in/sowmiya-a-work</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Sowmiya A</p>
+      <div class="footer__icons">
+        <a href="https://github.com/sowmi151" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+        <a href="https://www.linkedin.com/in/sowmiya-a-work" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+        <a href="mailto:your.email@example.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
